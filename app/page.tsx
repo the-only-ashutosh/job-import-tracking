@@ -50,20 +50,20 @@ export default function Home() {
     <div className="space-y-8 animate-fade-in">
       {/* Welcome Section */}
       <div className="text-center space-y-4">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full shadow-lg mb-4">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full shadow-lg mb-4 transition-transform duration-300 hover:scale-105">
           <Activity className="h-8 w-8 text-white" />
         </div>
         <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-          Import History Dashboard
+          Job Import Dashboard
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Monitor and analyze your data import operations with real-time insights, 
+          Monitor and analyze your job import operations with real-time insights, 
           comprehensive analytics, and detailed tracking of all import activities.
         </p>
       </div>
 
       {/* Status Banner */}
-      <Card className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-800">
+      <Card className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-800 transition-colors duration-300">
         <CardContent className="p-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -88,7 +88,7 @@ export default function Home() {
 
       {/* Additional Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-white/20 dark:border-slate-800/50">
+        <Card className="bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-white/20 dark:border-slate-800/50 transition-colors duration-300">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <Activity className="h-5 w-5" />
@@ -116,7 +116,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-white/20 dark:border-slate-800/50">
+        <Card className="bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-white/20 dark:border-slate-800/50 transition-colors duration-300">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <AlertCircle className="h-5 w-5" />

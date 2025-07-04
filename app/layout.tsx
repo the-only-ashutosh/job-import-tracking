@@ -9,8 +9,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Import History Dashboard',
-  description: 'Track and manage import history with detailed analytics and monitoring',
+  title: 'Job Import Dashboard',
+  description: 'Track and manage job import history with detailed analytics and monitoring',
 };
 
 export default function RootLayout({
@@ -27,9 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900">
+          <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900 transition-colors duration-300">
             <Header />
-            <main className="container mx-auto px-4 py-8">
+            <main className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8">
               {children}
             </main>
             <Footer />
