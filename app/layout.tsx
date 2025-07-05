@@ -1,23 +1,24 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/app/components/theme-provider';
-import { Header } from '@/app/components/header';
-import { Footer } from '@/app/components/footer';
-import { Toaster } from '@/components/ui/toaster';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/app/components/theme-provider";
+import { Header } from "@/app/components/header";
+import { Footer } from "@/app/components/footer";
+import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Job Import Dashboard',
-  description: 'Track and manage job import history with detailed analytics and monitoring',
+  title: "Job Import Dashboard",
+  description:
+    "Track and manage job import history with detailed analytics and monitoring",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
